@@ -53,7 +53,7 @@ def importar_personagens(caminho):
 def ordenar_personagens_por_vida(personagens):
     return sorted(personagens, key=lambda p: p.vida)
 
-personagens, num_personagens = importar_personagens('personagens.json')
+personagens, num_personagens = importar_personagens('FPSemana06\personagens.json')
 print(f"{num_personagens} Personagens Entram em Batalha!")
 
 personagens = ordenar_personagens_por_vida(personagens)
